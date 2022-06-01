@@ -112,7 +112,7 @@ nav ul li a:hover {
     text-shadow: -3px 0px 4px #a5a5a5;
 }
 
-main {
+.wrapper-main {
     display: flex;
 }
 
@@ -308,7 +308,7 @@ footer p {
 /* media query for desktop */
 
 @media screen and (max-width: 1026px) {
-    main {
+    .wrapper-main {
         flex-wrap: wrap;
     }
     .content {
