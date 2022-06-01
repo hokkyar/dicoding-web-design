@@ -1,0 +1,417 @@
+html,
+body,
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: linear-gradient(#E9D5DA, #fafafa);
+}
+
+nav {
+    background-color: #4D4C7D;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.dropdown-icon {
+    display: none;
+}
+
+.brand {
+    text-transform: uppercase;
+    color: white;
+    padding: 10px;
+    font-family: cursive;
+    cursor: default;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 5px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: white;
+    padding: 10px;
+    font-size: 17px;
+}
+
+nav ul li a:hover {
+    transition: .3s;
+    color: #bbabaf;
+}
+
+.beranda {
+    padding: 90px 20px 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.beranda h1 {
+    color: #4D4C7D;
+    font-size: 49px;
+}
+
+.beranda p {
+    color: #6a4997;
+    font-size: 19px;
+    margin: 16px 0;
+}
+
+.beranda a {
+    display: inline-block;
+    text-decoration: none;
+    color: #363062;
+    text-align: center;
+    padding: 12px;
+}
+
+.button {
+    border-radius: 3px;
+    border: 1px solid #363062;
+    box-shadow: 2px 4px 3px #363062;
+}
+
+.button:hover {
+    background-color: #4D4C7D;
+    transition: .3s;
+    color: white;
+}
+
+.button:active {
+    box-shadow: 2px 4px 5px #4D4C7D;
+}
+
+.beranda img {
+    width: 300px;
+    height: 300px;
+}
+
+.info-title {
+    text-align: center;
+    text-transform: capitalize;
+    margin: 30px 0 25px;
+    font-size: 35px;
+    color: #363062;
+    text-shadow: -3px 0px 4px #a5a5a5;
+}
+
+main {
+    display: flex;
+}
+
+.content {
+    padding: 20px;
+    flex-basis: 70%;
+    margin: 5px;
+}
+
+article {
+    padding: 12px;
+}
+
+article h2 {
+    color: #4D4C7D;
+    text-transform: capitalize;
+}
+
+article p {
+    padding: 1px;
+    text-align: justify;
+    line-height: 33px;
+    color: #363062;
+    font-size: 19px;
+}
+
+aside {
+    border: 4px inset #4D4C7D;
+    flex-basis: 30%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 3px;
+    box-shadow: 5px 5px 2px #a5a5a5;
+}
+
+aside h5 {
+    text-align: center;
+    font-size: 25px;
+    text-transform: capitalize;
+    color: #363062;
+}
+
+aside img {
+    width: 160px;
+    border: 1px solid #363062;
+    background-color: #cfcacb;
+    border-radius: 50%;
+    display: block;
+    margin: 15px auto;
+}
+
+.informasi-biodata {
+    display: flex;
+    justify-content: center;
+    border-radius: 3px;
+}
+
+.informasi-biodata p {
+    padding: 5px;
+    color: #363062;
+    margin: 5px;
+    font-weight: 700;
+    font-size: 16.5px;
+}
+
+.value {
+    margin: 30px 15px;
+    padding: 12px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.value div {
+    margin: 0 10px;
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.value img {
+    display: block;
+    margin: 10px auto;
+    width: 120px;
+}
+
+.value h3 {
+    text-align: center;
+    color: #4D4C7D;
+    font-size: 21px;
+    margin: 19px 0;
+}
+
+.value p {
+    text-align: center;
+    color: #363062;
+    font-size: 18px;
+}
+
+footer {
+    background-color: #dbd1d3;
+}
+
+footer h2 {
+    padding: 25px 0 5px;
+}
+
+.info-kontak {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-kontak h1 {
+    text-align: center;
+    text-shadow: -3px 0px 4px #949393;
+}
+
+.info-kontak a {
+    display: inline-block;
+    margin: 0 16px;
+}
+
+.info-kontak img {
+    width: 35px;
+    margin: 0 auto;
+}
+
+.detail-kontak {
+    display: flex;
+}
+
+.detail-kontak div {
+    flex-basis: 50%;
+    padding: 12px;
+    margin: 1px 0;
+}
+
+.form-kontak {
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    text-transform: capitalize;
+}
+
+label {
+    display: inline-block;
+    padding: 6px 0;
+    font-size: 17px;
+    color: #363062;
+    font-weight: 700;
+}
+
+input {
+    min-width: 370px;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+}
+
+textarea {
+    resize: none;
+    border: none;
+    border-radius: 3px;
+}
+
+button {
+    margin: 10px 0;
+    padding: 10px 20px;
+    font-size: 15px;
+    color: white;
+    background-color: #363062;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+button:hover {
+    transition: .3s;
+    opacity: 0.9;
+}
+
+footer p {
+    text-align: center;
+    border: 1px solid #363062;
+    padding: 12px;
+    color: white;
+    background-color: #363062;
+    cursor: default;
+}
+
+
+/* media query for desktop */
+
+@media screen and (max-width: 1026px) {
+    main {
+        flex-wrap: wrap;
+    }
+    .content {
+        flex-grow: 1;
+    }
+    aside {
+        flex-grow: 1;
+    }
+}
+
+
+/* media query for tablet */
+
+@media screen and (max-width: 883px) {
+    .value {
+        flex-wrap: wrap;
+    }
+    .beranda h1 {
+        font-size: 33px;
+    }
+    .beranda p {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .beranda img {
+        width: 250px;
+        height: 250px;
+    }
+    .beranda h1 {
+        font-size: 30px;
+    }
+    .beranda p {
+        font-size: 16px;
+    }
+    .info-title {
+        font-size: 30px;
+    }
+    article p {
+        line-height: 33px;
+        font-size: 17px;
+    }
+    .value h3 {
+        font-size: 19px;
+    }
+    .value p {
+        font-size: 16px;
+    }
+}
+
+
+/* media query for mobile */
+
+@media screen and (max-width: 677px) {
+    .detail-kontak {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .info-title {
+        font-size: 25px;
+    }
+    article p {
+        line-height: 27px;
+        font-size: 15px;
+    }
+    article h2 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 535px) {
+    .beranda img {
+        width: 150px;
+        height: 150px;
+    }
+    .info-kontak h1 {
+        font-size: 25px;
+    }
+    .info-kontak a {
+        margin: 0 5px;
+    }
+    .info-kontak img {
+        width: 35px;
+    }
+    nav ul {
+        display: none;
+    }
+    .dropdown-icon {
+        display: block;
+        cursor: pointer;
+        margin: 0 15px;
+        color: white;
+    }
+    .dropdown-icon img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+.dropdown-content {
+    position: fixed;
+    top: 63px;
+    right: 0;
+    left: 0;
+}
